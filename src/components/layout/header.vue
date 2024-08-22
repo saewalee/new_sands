@@ -3,7 +3,7 @@
     <div class="con">
       <h1>
         <router-link to="/">
-          <img src="../../images/logo.svg" alt="샌즈랩 로고" />
+          <img src="@/images/logo.svg" alt="샌즈랩 로고" />
         </router-link>
       </h1>
       <nav class="menu-item">
@@ -18,7 +18,3 @@
 
   <!-- <router-view /> -->
 </template>
-
-<script>
-import "../../styles/header.css";
-</script>

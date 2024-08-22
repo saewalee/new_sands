@@ -20,11 +20,8 @@
       </div>
       <ul class="card">
         <li v-for()>
-          <img
-            src="../../../images/sand_security.svg"
-            alt=""
-            style="height: 160px"
-          />
+          <!-- style="height: 160px" // 될 수 있으면 속성을 사용한다 -->
+          <img src="@/images/sand_security.svg" alt="" height="160" />
         </li>
         <li></li>
         <li></li>
@@ -34,7 +31,3 @@
   </section>
   <!-- <router-view /> -->
 </template>
-
-<script>
-import "../../../styles/home/sand.css";
-</script>

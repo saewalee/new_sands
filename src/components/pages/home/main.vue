@@ -15,7 +15,3 @@
   </section>
   <!-- <router-view /> -->
 </template>
-
-<script>
-import "../../../styles/home/main.css";
-</script>

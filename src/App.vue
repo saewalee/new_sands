@@ -22,7 +22,6 @@
 
 <script>
 import Header from "@/components/layout/header.vue";
-// import "./styles/font.css";
 
 export default {
   name: "App",

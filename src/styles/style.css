@@ -1,3 +1,6 @@
+@import "header.css";
+@import "home/sand.css";
+
 body {
   background-color: black;
   color: white;
