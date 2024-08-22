@@ -1,0 +1,12 @@
+.inquiry {
+  @apply h-screen;
+  background: url("../../images/iqubg.png") 50% 50% / cover;
+  > .sands-con {
+    > .title {
+      @apply h-full p-0;
+      > span {
+        @apply mb-0;
+      }
+    }
+  }
+}

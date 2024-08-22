@@ -19,13 +19,27 @@
         </p>
       </div>
       <ul class="card">
-        <li v-for()>
+        <li>
           <!-- style="height: 160px" // 될 수 있으면 속성을 사용한다 -->
           <img src="@/images/sand_security.svg" alt="" height="160" />
+          <span>사이버보안</span>
+          <p><em>S</em>ecurity</p>
         </li>
-        <li></li>
-        <li></li>
-        <li></li>
+        <li>
+          <img src="@/images/sand_ai.svg" alt="" height="160" />
+          <span>인공지능</span>
+          <p><em>A</em>i</p>
+        </li>
+        <li>
+          <img src="@/images/sand_network.svg" alt="" height="160" />
+          <span>네트워크</span>
+          <p><em>N</em>etwork</p>
+        </li>
+        <li>
+          <img src="@/images/sand_data.svg" alt="" height="160" />
+          <span>데이터</span>
+          <p><em>D</em>ata</p>
+        </li>
       </ul>
     </div>
   </section>

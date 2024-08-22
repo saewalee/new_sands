@@ -24,16 +24,20 @@ export default {
 <template>
   <mainslide />
   <sand />
+  <service />
+  <technology />
+  <issue />
+  <Inquiry />
 </template>
 
 <script>
 import Example from "@/components/Example.vue";
 import Mainslide from "@/components/pages/home/main.vue";
 import Sand from "@/components/pages/home/sand.vue";
-// import Serviesolution from "@/components/pages/home/serviesolution.vue";
-// import Technology from "@/components/pages/home/technology.vue";
-// import Issue from "@/components/pages/home/issue.vue";
-// import Inquiry from "@/components/pages/home/inquiry.vue";
+import Service from "@/components/pages/home/service.vue";
+import Technology from "@/components/pages/home/technology.vue";
+import Issue from "@/components/pages/home/issue.vue";
+import Inquiry from "@/components/pages/home/inquiry.vue";
 
 export default {
   name: "Home",
@@ -42,6 +46,10 @@ export default {
     Example,
     Mainslide,
     Sand,
+    Service,
+    Technology,
+    Issue,
+    Inquiry,
     // sand,
     // serviesolution,
     // technology,
