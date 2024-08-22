@@ -1,0 +1,32 @@
+.main {
+  @apply h-screen bg-cover bg-center;
+  background: url("../../images/mainslide1.png");
+
+  > .sands-con {
+    /* @apply w-[1380px] h-full mx-auto; */
+    /* border: 1px solid red; */
+
+    > .mainslide__text {
+      @apply flex flex-col h-full justify-center gap-[40px];
+
+      > h2 {
+        @apply text-[46px] font-medium leading-[65px];
+      }
+
+      > p {
+        @apply text-[20px] leading-[30px] font-light;
+        color: #fafafa;
+      }
+    }
+  }
+}
+
+/* 
+.mainslide__text > h2 {
+  @apply text-[46px] font-medium leading-[65px];
+}
+
+.mainslide__text > p {
+  @apply text-[20px] leading-[30px] font-light;
+  color: #fafafa;
+} */

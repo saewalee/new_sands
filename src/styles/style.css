@@ -6,3 +6,20 @@ body {
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+/* base 기본 css 기본 스타일을 주는 것.? */
+@layer base {
+  .sands-con {
+    @apply w-[1380px] h-full mx-auto;
+    border: 1px solid red;
+  }
+}
+
+/* components 버튼, 카드 같은 녀석들 스타일 정해주기? */
+@layer components {
+  .btn {
+    @apply hover:bg-white;
+  }
+}
+
+/* utilties */

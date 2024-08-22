@@ -1,0 +1,11 @@
+header {
+  @apply flex w-full h-20 fixed;
+  > .con {
+    @apply flex w-full justify-between items-center px-[40px];
+
+    > .menu-item {
+      @apply flex gap-[50px];
+    }
+  }
+  /* padding: 24px 40px; */
+}
