@@ -7,6 +7,12 @@
           편하게 문의 주세요
         </span>
       </div>
+      <form action="button">
+        <fieldset>
+          <legend></legend>
+          <button type="button" aria-label="문의 버튼">문의하기</button>
+        </fieldset>
+      </form>
     </div>
   </section>
   <!-- <router-view /> -->

@@ -1,3 +1,63 @@
 .issue {
   @apply h-screen;
 }
+
+.issue-box {
+  @apply flex gap-g20 flex-wrap w-full justify-between;
+
+  > li {
+    @apply rounded-br10 overflow-hidden h-h320 w-w440 border border-issue-gray;
+    transition: all 0.5s;
+
+    &:hover {
+      @apply bg-issue-card border-sand-blue;
+    }
+
+    &:hover > a > div:last-of-type > .mainbtn a > div:first-of-type {
+      @apply bg-white mt-m5 ml-m5;
+
+      > div {
+        &:before {
+          @apply border-l-2 border-t-2 border-black;
+        }
+
+        &:after {
+          @apply bg-black;
+        }
+      }
+    }
+
+    > a {
+      @apply flex flex-col h-full w-full p-p30 font-g justify-between;
+
+      > div:first-of-type {
+        @apply flex flex-col;
+
+        > em {
+          @apply not-italic text-t20 mb-m10;
+        }
+
+        > span {
+          @apply font-light text-t22 leading-lh26 mb-m20 block text-ellipsis overflow-hidden text-nowrap;
+          max-width: 377px;
+        }
+
+        > p {
+          @apply font-light text-t16 text-nav-gray text-ellipsis overflow-hidden;
+          max-width: 377px;
+          display: -webkit-box;
+          -webkit-line-clamp: 2;
+          -webkit-box-orient: vertical;
+        }
+      }
+
+      > div:last-of-type {
+        @apply flex justify-between font-g font-light text-t15 items-center;
+        /* border: 1px solid red; */
+        > span {
+          @apply text-t15 text-nav-gray;
+        }
+      }
+    }
+  }
+}

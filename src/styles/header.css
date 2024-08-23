@@ -3,22 +3,19 @@ header {
 
   > .con {
     @apply flex w-full justify-between items-center px-[40px] h-header;
+    border-bottom: 1px solid rgba(57, 144, 249, 0);
 
     > .menu-item {
       @apply flex h-full;
 
       > ul {
-        @apply flex gap-g50 items-center h-full;
+        @apply flex items-center h-full;
 
         > li {
           @apply flex justify-center font-g text-nav-gray w-li text-center relative;
           &:hover {
             > a {
               @apply text-sand-blue;
-            }
-
-            > .dept2 {
-              @apply opacity-100 visible;
             }
           }
 
@@ -27,7 +24,7 @@ header {
           }
 
           > .dept2 {
-            @apply p-p24 transition-opacity duration-500 w-full opacity-0 invisible absolute h-h140 top-full;
+            @apply p-p24 transition-opacity duration-700 w-full opacity-0 invisible absolute h-h140 top-full;
 
             > li {
               @apply w-li text-center text-nav2-gray font-light mt-m10;
@@ -35,6 +32,14 @@ header {
                 @apply text-sand-blue;
               }
             }
+          }
+        }
+      }
+
+      > ul:hover {
+        > li {
+          .dept2 {
+            @apply opacity-100 visible;
           }
         }
       }

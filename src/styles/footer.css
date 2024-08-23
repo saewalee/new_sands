@@ -1,0 +1,13 @@
+footer {
+  /* height: 300px; */
+  @apply h-footer bg-black;
+  > .sands-con {
+    padding: 20px 0px;
+    > div {
+      @apply flex justify-between items-end;
+      > ul {
+        @apply flex gap-g20 text-t18 font-g font-light text-lightGR5;
+      }
+    }
+  }
+}
