@@ -1,3 +1,219 @@
 .service {
-  @apply h-screen;
+  /* @apply h-screen; */
+  height: 180vh;
+
+  > .sands-con {
+    > .service-box {
+      @apply h-full flex gap-g50;
+      > div {
+        @apply w-full flex flex-col h-full w-full;
+        > div {
+          div {
+            z-index: 1;
+          }
+        }
+      }
+
+      > .service-box__left {
+        @apply justify-between gap-g20;
+
+        > div {
+          @apply w-full h-h750 rounded-br10;
+
+          > a {
+            @apply flex w-full h-full p-p40;
+
+            > div {
+              > img {
+                @apply mb-m30 h-h50 w-w45;
+              }
+
+              > h3 {
+                @apply font-e not-italic text-t50 mb-m20;
+              }
+              > p {
+                @apply text-t20 font-g font-light;
+                /* margin-bottom: 40px; */
+              }
+
+              > ul {
+                opacity: 0;
+                visibility: hidden;
+                transition: opacity 1s;
+                > li {
+                  @apply text-t15 font-g font-light mt-m10 list-disc;
+                }
+              }
+            }
+
+            > div:first-of-type {
+              @apply flex flex-col h-full w-w85per mt-m450;
+              transition: margin 0.8s;
+            }
+
+            > div:last-of-type {
+              @apply flex flex-col justify-end items-end h-full w-w15per;
+            }
+          }
+
+          > a:hover {
+            > div:first-of-type {
+              @apply justify-start mt-0;
+              /* margin-top: 0px; */
+
+              > ul {
+                @apply mt-m40;
+                opacity: 1;
+                visibility: visible;
+              }
+            }
+
+            > div:last-of-type {
+              .mainbtn button > div:first-of-type {
+                @apply bg-white mt-m5 ml-m5;
+
+                > div {
+                  &:before {
+                    @apply border-l-2 border-t-2 border-black;
+                  }
+
+                  &:after {
+                    @apply bg-black;
+                  }
+                }
+              }
+            }
+          }
+        }
+
+        > .ctx {
+          @apply flex border border-red02 overflow-hidden;
+          > a {
+            @apply relative;
+            background: url(@/images/ctxbg.png);
+            transition: background 1s;
+
+            &::after {
+              @apply absolute h-full w-full left-0 top-0 opacity-0 bg-ctxBg;
+              content: "";
+              transition: opacity 1s;
+            }
+          }
+
+          > a:hover {
+            @apply bg-none;
+
+            &::after {
+              opacity: 1;
+            }
+          }
+        }
+
+        > .mdx {
+          @apply border border-light-blue02 overflow-hidden;
+
+          > a {
+            background: url(@/images/mdxbg.png);
+            transition: background 1s;
+            position: relative;
+            &::after {
+              @apply absolute h-full w-full left-0 top-0 opacity-0 bg-mdxBg;
+              content: "";
+              transition: opacity 1s;
+            }
+          }
+
+          > a:hover {
+            background: none;
+            &::after {
+              opacity: 1;
+            }
+          }
+        }
+      }
+
+      > .service-box__right {
+        @apply justify-center;
+
+        > .mnx {
+          @apply w-full rounded-br10 border border-blue01 h-h750 overflow-hidden;
+
+          > a {
+            @apply flex w-full h-full p-p40 relative;
+            background: url(@/images/mnxbg.png);
+            transition: background 1s;
+
+            &::after {
+              @apply absolute h-full w-full left-0 top-0 opacity-0 bg-mnxBg;
+              content: "";
+              transition: opacity 1s;
+            }
+
+            > div {
+              > img {
+                @apply mb-m30 h-h50 w-w98;
+              }
+
+              > h3 {
+                @apply font-e not-italic text-t50 mb-m20;
+              }
+              > p {
+                @apply text-t20 font-g font-light;
+              }
+
+              > ul {
+                opacity: 0;
+                visibility: hidden;
+                transition: opacity 1s;
+                > li {
+                  @apply text-t15 font-g font-light mt-m10 list-disc;
+                }
+              }
+            }
+
+            > div:first-of-type {
+              @apply flex flex-col w-w85per mt-m450;
+              transition: margin 0.8s;
+            }
+
+            > div:last-of-type {
+              @apply flex flex-col justify-end items-end w-w15per;
+            }
+          }
+
+          > a:hover {
+            @apply bg-none;
+            &::after {
+              opacity: 1;
+            }
+            > div:first-of-type {
+              @apply justify-start mt-0;
+
+              > ul {
+                @apply mt-m40;
+                opacity: 1;
+                visibility: visible;
+              }
+            }
+
+            > div:last-of-type {
+              .mainbtn button > div:first-of-type {
+                @apply bg-white mt-m5 ml-m5;
+
+                > div {
+                  &:before {
+                    @apply border-l-2 border-t-2 border-black;
+                  }
+
+                  &:after {
+                    @apply bg-black;
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
 }

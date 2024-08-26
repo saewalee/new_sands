@@ -6,10 +6,14 @@
 
     .title {
       @apply absolute;
-      /* text-align: start; */
-      /* border: 1px solid red; */
+
       > div {
         @apply w-full;
+        > p {
+          @apply flex text-t18 gap-g10 mb-m20 font-light bg-g-txt-blue bg-clip-text;
+          -webkit-background-clip: text;
+          -webkit-text-fill-color: transparent;
+        }
       }
       > span {
         @apply w-full text-start;
@@ -17,40 +21,42 @@
     }
   }
   > .tech {
-    @apply absolute flex flex-col justify-end h-full w-full gap-g40;
-    top: -5%;
+    @apply absolute flex flex-col justify-end h-h80per w-full gap-g40;
+    bottom: 5%;
     left: 0;
-    border: 1px solid gold;
+    /* border: 1px solid gold; */
 
     > .dbp {
       display: grid;
       height: 320px;
       grid-template-columns: repeat(12, 1fr);
-      border: 1px solid pink;
-      justify-content: center;
+      /* border: 1px solid pink; */
+      /* justify-content: nd; */
 
       > .dbp-box {
+        @apply col-start-6 col-span-8;
         padding: 55px;
         height: 320px;
+        /* width: 100%; */
         border-top-left-radius: 100px;
-        grid-column: span 6;
+        /* grid-column: span 8; */
+        /* margin-left: 100px; */
+
         background: linear-gradient(
-          240deg,
+          90deg,
           rgba(57, 144, 249, 0.2) -1.7%,
           rgba(57, 144, 249, 0) 105.46%
         );
 
         > div {
-          display: flex;
-          justify-self: start;
-          gap: 50px;
+          @apply flex justify-start gap-g50;
 
           > div {
             @apply flex flex-col;
-            > span {
+            > h4 {
               @apply text-t18 font-light mb-m7;
             }
-            > em {
+            > h3 {
               @apply text-t36 not-italic bg-g-txt-blue bg-clip-text mb-m20;
               -webkit-background-clip: text;
               -webkit-text-fill-color: transparent;
@@ -76,19 +82,39 @@
           }
         }
       }
+
+      > .dbp-box:hover {
+        > div {
+          > div {
+            > .mainbtn button > div:first-of-type {
+              @apply bg-white mt-m5 ml-m5;
+
+              > div {
+                &:before {
+                  @apply border-l-2 border-t-2 border-black;
+                }
+
+                &:after {
+                  @apply bg-black;
+                }
+              }
+            }
+          }
+        }
+      }
     }
 
     > .ddp {
       display: grid;
       height: 320px;
       grid-template-columns: repeat(14, 1fr);
-      border: 1px solid red;
+      /* border: 1px solid ; */
 
       > .ddp-box {
         padding: 55px;
         height: 320px;
         border-bottom-right-radius: 100px;
-        grid-column: span 12;
+        grid-column: span 11;
         background: linear-gradient(
           240deg,
           rgba(57, 144, 249, 0.2) -1.7%,
@@ -103,10 +129,10 @@
           > div {
             @apply flex flex-col;
 
-            > span {
+            > h4 {
               @apply text-t18 font-light mb-m7;
             }
-            > em {
+            > h3 {
               @apply text-t36 not-italic bg-g-txt-blue bg-clip-text mb-m20;
               -webkit-background-clip: text;
               -webkit-text-fill-color: transparent;
@@ -115,8 +141,14 @@
             > p {
               @apply mb-m30 font-g font-light text-t18 whitespace-nowrap;
             }
+          }
+        }
+      }
 
-            > .mainbtn:hover a > div:first-of-type {
+      > .ddp-box:hover {
+        > div {
+          > div {
+            > .mainbtn button > div:first-of-type {
               @apply bg-white mt-m5 ml-m5;
 
               > div {

@@ -3,11 +3,40 @@ footer {
   @apply h-footer bg-black;
   > .sands-con {
     padding: 20px 0px;
-    > div {
+    > div:first-of-type {
       @apply flex justify-between items-end;
       > ul {
-        @apply flex gap-g20 text-t18 font-g font-light text-lightGR5;
+        @apply flex gap-g20 text-t18 font-g font-light text-light-gray04;
+        > li:last-of-type {
+          @apply relative;
+          &::after {
+            @apply absolute w-w1 h-h80per bg-dark-gray03;
+            content: "";
+            left: -6%;
+          }
+        }
       }
+    }
+
+    > div:nth-of-type(2) {
+      @apply flex justify-between items-end mt-m60 pb-p30;
+
+      > ul:first-of-type {
+        @apply flex flex-col text-t16 font-g font-light text-light-gray04;
+      }
+
+      > ul:last-of-type {
+        @apply flex gap-5 text-t16;
+        > li {
+          > a:hover {
+            > img {
+            }
+          }
+        }
+      }
+    }
+    > p {
+      @apply text-t14 font-g font-light text-light-gray04 pt-p30 text-end border-t border-dark-gray02;
     }
   }
 }

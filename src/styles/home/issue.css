@@ -1,19 +1,27 @@
 .issue {
   @apply h-screen;
 }
-
+.title {
+  > div {
+    > p {
+      @apply flex text-t18 gap-g10 mb-m20 font-light bg-g-txt-blue bg-clip-text;
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+  }
+}
 .issue-box {
   @apply flex gap-g20 flex-wrap w-full justify-between;
 
   > li {
-    @apply rounded-br10 overflow-hidden h-h320 w-w440 border border-issue-gray;
+    @apply rounded-br10 overflow-hidden h-h320 w-w440 border border-light-gray03;
     transition: all 0.5s;
 
     &:hover {
-      @apply bg-issue-card border-sand-blue;
+      @apply bg-issue-card border-blue01;
     }
 
-    &:hover > a > div:last-of-type > .mainbtn a > div:first-of-type {
+    &:hover > a > div:last-of-type > .mainbtn button > div:first-of-type {
       @apply bg-white mt-m5 ml-m5;
 
       > div {
@@ -37,13 +45,13 @@
           @apply not-italic text-t20 mb-m10;
         }
 
-        > span {
-          @apply font-light text-t22 leading-lh26 mb-m20 block text-ellipsis overflow-hidden text-nowrap;
+        > h3 {
+          @apply font-light text-t22 mb-m20 block text-ellipsis overflow-hidden text-nowrap;
           max-width: 377px;
         }
 
         > p {
-          @apply font-light text-t16 text-nav-gray text-ellipsis overflow-hidden;
+          @apply font-light text-t16 text-light-gray05 text-ellipsis overflow-hidden;
           max-width: 377px;
           display: -webkit-box;
           -webkit-line-clamp: 2;
@@ -55,7 +63,7 @@
         @apply flex justify-between font-g font-light text-t15 items-center;
         /* border: 1px solid red; */
         > span {
-          @apply text-t15 text-nav-gray;
+          @apply text-t15 text-light-gray05;
         }
       }
     }

@@ -2,13 +2,11 @@
   <section class="sand">
     <div class="sands-con">
       <div class="title">
-        <div>
-          <p>인공지능</p>
-          ·
-          <p>빅데이터</p>
-          ·
-          <p>프로파일링</p>
-        </div>
+        <ul>
+          <li>인공지능</li>
+          <li>빅데이터</li>
+          <li>프로파일링</li>
+        </ul>
         <span>
           데이터 중심의 디지털 안전 사회를 위한<br />
           <em>新 보안 체계</em>를 구축합니다.
@@ -22,22 +20,22 @@
         <li>
           <!-- style="height: 160px" // 될 수 있으면 속성을 사용한다 -->
           <img src="@/images/sand_security.svg" alt="" height="160" />
-          <span>사이버보안</span>
+          <h3>사이버보안</h3>
           <p><em>S</em>ecurity</p>
         </li>
         <li>
           <img src="@/images/sand_ai.svg" alt="" height="160" />
-          <span>인공지능</span>
+          <h3>인공지능</h3>
           <p><em>A</em>i</p>
         </li>
         <li>
           <img src="@/images/sand_network.svg" alt="" height="160" />
-          <span>네트워크</span>
+          <h3>네트워크</h3>
           <p><em>N</em>etwork</p>
         </li>
         <li>
           <img src="@/images/sand_data.svg" alt="" height="160" />
-          <span>데이터</span>
+          <h3>데이터</h3>
           <p><em>D</em>ata</p>
         </li>
       </ul>

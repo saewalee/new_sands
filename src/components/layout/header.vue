@@ -20,7 +20,7 @@
           </li>
 
           <li @mouseover="addHoverClass" @mouseleave="removeHoverClass">
-            <a href="/company"> 서비스 </a>
+            <a href="/service"> 서비스 </a>
             <ul class="dept2">
               <li><a href="">CTX</a></li>
               <li><a href="">CTX For GPT</a></li>
@@ -44,7 +44,7 @@
           </li>
 
           <li @mouseover="addHoverClass" @mouseleave="removeHoverClass">
-            <a href="">소식</a>
+            <a href="/notice">소식</a>
             <ul class="dept2">
               <li><a href="">공지사항</a></li>
               <li><a href="">뉴스</a></li>

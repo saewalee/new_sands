@@ -4,31 +4,41 @@ export default {
   theme: {
     extend: {
       colors: {
-        // "c-white": "#fff",
+        // BASIC COLOR
+        transparent: "transparent",
+        black: "#000000",
+        white: "#ffffff",
+        light: "#F0FEFF",
 
         // white
-        "sand-white": "#fafafa",
-        "white-0.8": "rgba(255, 255, 255, 0.80)",
         "white-0.4": "rgba(255, 255, 255, 0.4);",
+        "white-0.8": "rgba(255, 255, 255, 0.80)",
 
         // gray
-        "issue-gray": "#A7A6A5",
         "light-gray": "#D9D9D9",
-        "nav-gray": "#D3D1D0",
-        "nav2-gray": "#A7A6A5",
+        "light-gray02": "#fafafa",
+        "light-gray03": "#A7A6A5",
+        "light-gray04": "#A8A8A8",
+        "light-gray05": "#D3D1D0",
+        "light-gray06": "#A7A6A5",
+
         "dark-gray": "#909090",
-        lightGR5: "#A8A8A8",
+        "dark-gray02": "#333",
+        "dark-gray03": "#575757",
 
         // red
-        "sand-red": "#FF2125",
+        red01: "#FF2125",
+        red02: "#FF0C0C",
 
         // blue
-        "sand-blue": "#3990F9",
-        "snad-skyblue": "#17F9F9",
+        blue01: "#3990F9",
+
+        "light-blue01": "#17F9F9",
+        "light-blue02": "#4FDFFF",
       },
 
       backgroundColor: {
-        "header-hover": "rgba(5, 10, 26, 0.8)",
+        headerBg: "rgba(5, 10, 26, 0.8)",
         "con-hover": "#050a1a",
         "issue-card": "rgba(57, 144, 249, 0.1)",
       },
@@ -45,7 +55,7 @@ export default {
         ctxBg:
           "linear-gradient(180deg, rgba(255, 12, 12, 0.03) 0%, rgba(255, 12, 12, 0.30) 100%)",
         mnxBg:
-          "linear-gradient(180deg, r gba(57, 144, 249, 0.03) 0%, rgba(57, 144, 249, 0.30) 100%)",
+          "linear-gradient(180deg, rgba(57, 144, 249, 0.03) 0%, rgba(57, 144, 249, 0.30) 100%)",
         mdxBg:
           "linear-gradient(180deg, rgba(79, 223, 255, 0.03) 0%, rgba(79, 223, 255, 0.30) 100%)",
       },
@@ -61,8 +71,10 @@ export default {
         g50: "50px",
       },
       padding: {
+        p10: "10px",
         p24: "24px 0 24px 0",
         p30: "30px",
+        p40: "40px",
         p130: "130px",
         p160: "160px",
       },
@@ -75,24 +87,22 @@ export default {
         m30: "30px",
         m40: "40px",
         m60: "60px",
+        m450: "450px",
       },
       fontSize: {
+        t14: "14px",
         t15: "15px",
-        t16: "16px",
+        t16: ["16px", "24px"],
         t18: "18px",
-        t20: "20px",
-        t22: "22px",
+        t20: ["20px", "30px"],
+        t22: ["22px", "26.4px"],
         t24: "24px",
         t36: "36px",
         title: "40px",
-        t46: "46px",
+        t46: ["46px", "55px"],
+        t50: ["50px", "65px"],
       },
-      lineHeight: {
-        lh26: "26.4px",
-        lh30: "30px",
-        lh55: "55px",
-        lh65: "65px",
-      },
+
       borderRadius: {
         br8: "8px",
         br10: "10px",
@@ -102,28 +112,38 @@ export default {
         header: "78px",
         headeropen: "218px",
         button: "40px",
+        h1: "1px",
         h2: "2px",
         h8: "8px",
         h35: "35px",
-
+        h50: "50px",
         h140: "140px",
         footer: "300px",
         h320: "320px",
         h335: "335px",
+        h750: "750px",
+        h80per: "80%",
+        h85per: "85%",
       },
       width: {
         button: "40px",
         con: "1380px",
         li: "140px",
+        w1: "1px",
         w8: "8px",
         w12: "12px",
         w35: "35px",
+        w45: "45px",
+        w98: "98px",
         w289: "289px",
         w296: "296px",
         w440: "440px",
+        w15per: "15%",
+        w85per: "85%",
       },
       fontFamily: {
         g: "GmarketSans",
+        e: "EsaManru",
       },
       transitionProperty: {
         height: "height",

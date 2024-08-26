@@ -3,18 +3,18 @@
   background: url("../../images/mainslide1.png");
 
   > .sands-con {
-    /* @apply w-[1380px] h-full mx-auto; */
+    @apply w-[1380px] h-full mx-auto;
     /* border: 1px solid red; */
 
     > .mainslide__text {
       @apply flex flex-col h-full justify-center gap-g40;
 
       > h2 {
-        @apply text-t46 font-medium leading-lh65;
+        @apply text-t50 font-medium;
       }
 
       > p {
-        @apply text-t20 leading-lh30 font-light to-sand-white font-g font-light;
+        @apply text-t20 font-light to-light-gray02 font-g font-light;
       }
     }
   }

@@ -22,7 +22,8 @@ export default {
 
 <!-- 메인 컴포넌트 -->
 <template>
-  <mainslide />
+  <mainslide2 />
+  <!-- <mainslide /> -->
   <sand />
   <service />
   <technology />
@@ -33,6 +34,7 @@ export default {
 <script>
 import Example from "@/components/Example.vue";
 import Mainslide from "@/components/pages/home/main.vue";
+import Mainslide2 from "@/components/pages/home/mainslide.vue";
 import Sand from "@/components/pages/home/sand.vue";
 import Service from "@/components/pages/home/service.vue";
 import Technology from "@/components/pages/home/technology.vue";
@@ -45,6 +47,7 @@ export default {
   components: {
     Example,
     Mainslide,
+    Mainslide2,
     Sand,
     Service,
     Technology,

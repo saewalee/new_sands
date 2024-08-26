@@ -1,39 +1,46 @@
 .mainbtn {
-  @apply h-button w-button;
+  @apply flex h-button w-button relative justify-end items-end;
+  z-index: 10;
+  /* border: 1px solid red; */
+  > fieldset {
+    @apply h-full w-full relative;
+    > legend {
+      display: none;
+    }
+    > button {
+      @apply flex h-full w-full justify-end items-end;
 
-  > a {
-    @apply flex h-full w-full relative justify-end items-end;
+      > div:first-of-type {
+        @apply absolute top-0 left-0 h-h35 w-w35 border border-white;
+        /* background-color: #000; */
+        transition: all 0.2s;
+        /* border: 1px solid #fff; */
 
-    > div:first-of-type {
-      @apply absolute top-0 left-0 h-h35 w-w35 border border-white;
-      transition: all 0.2s;
-      /* border: 1px solid #fff; */
+        > div {
+          @apply relative h-full w-full;
 
-      > div {
-        @apply relative h-full w-full;
+          &:before {
+            @apply absolute h-h8 w-w8 border-l-2 border-t-2 border-white;
+            content: "";
+            left: 55%;
+            top: 50%;
+            transform: translate(-50%, -50%) rotate(135deg);
+          }
 
-        &:before {
-          @apply absolute h-h8 w-w8 border-l-2 border-t-2 border-white;
-          content: "";
-          left: 55%;
-          top: 50%;
-          transform: translate(-50%, -50%) rotate(135deg);
-        }
-
-        &:after {
-          @apply absolute h-h2 w-w12 bg-white;
-          content: "";
-          right: 35%;
-          top: 50%;
-          transform: translateY(-50%);
+          &:after {
+            @apply absolute h-h2 w-w12 bg-white;
+            content: "";
+            right: 35%;
+            top: 50%;
+            transform: translateY(-50%);
+          }
         }
       }
-    }
 
-    > div:last-of-type {
-      @apply h-h35 w-w35 border-white-0.4 border;
-      /* border: 1px solid rgba(255, 255, 255, 0.4); */
+      > div:last-of-type {
+        @apply h-h35 w-w35 border-white-0.4 border;
+        /* border: 1px solid rgba(255, 255, 255, 0.4); */
+      }
     }
   }
-  /* border: 1px solid gold; */
 }

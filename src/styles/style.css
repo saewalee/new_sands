@@ -1,6 +1,7 @@
 @import "header.css";
 @import "footer.css";
 @import "home/main.css";
+@import "home/mainslide.css";
 @import "home/sand.css";
 @import "home/service.css";
 @import "home/technology.css";
@@ -22,22 +23,28 @@ body {
 /* base 기본 css 기본 스타일을 주는 것.? */
 @layer base {
   .sands-con {
-    @apply w-con h-full mx-auto;
-    border: 1px solid red;
+    @apply w-con h-full mx-auto flex flex-col;
+    /* border: 1px solid red; */
   }
 }
 
 /* components 버튼, 카드 같은 녀석들 스타일 정해주기? */
 @layer components {
   /* 각 섹션 타이틀 텍스트 */
-  .title > div {
+  .title > ul {
     @apply flex text-t18 gap-g10 mb-m20 font-light bg-g-txt-blue bg-clip-text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
   }
 
+  /* .title  {
+    @apply flex text-t18 gap-g10 mb-m20 font-light bg-g-txt-blue bg-clip-text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  } */
+
   .title > span {
-    @apply text-t46 text-center leading-lh55 mb-m40;
+    @apply text-t46 text-center mb-m40;
   }
 
   .btn {

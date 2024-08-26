@@ -1,0 +1,45 @@
+.mainslide {
+  @apply h-screen;
+
+  > .swiper {
+    @apply h-full w-full;
+
+    > .swiper-wrapper {
+      @apply h-full w-full;
+
+      > .swiper-slide {
+        @apply bg-cover bg-center h-full w-full;
+
+        > .sands-con {
+          > .mainslide__text {
+            @apply flex flex-col h-full justify-center gap-g40;
+
+            > h2 {
+              @apply text-t50 font-medium;
+            }
+
+            > p {
+              @apply text-t20 font-light to-light-gray02 font-g font-light;
+            }
+          }
+        }
+      }
+
+      > .slide1 {
+        @apply bg-cover;
+        background: url("../../images/mainslide1.png") no-repeat;
+        background-size: cover;
+      }
+
+      > .slide2 {
+        background: url("../../images/mainslide2.png") no-repeat;
+        background-size: cover;
+      }
+
+      > .slide3 {
+        background: url("../../images/mainslide3.png") no-repeat;
+        background-size: cover;
+      }
+    }
+  }
+}

@@ -16,26 +16,26 @@
     <!-- grid 를 써서? -->
     <div class="tech">
       <div class="dbp">
-        <div class="dbp-box">
+        <a href="#" class="dbp-box">
           <div>
             <img src="@/images/dbp.svg" alt="" />
             <div>
-              <span>Deep Binary Profiler (2021)</span>
-              <em>DBP</em>
+              <h4>Deep Binary Profiler (2021)</h4>
+              <h3>DBP</h3>
               <p>바이너리 역공학 기반 공격자 프로파일링 기술</p>
               <mainbtn />
             </div>
           </div>
-        </div>
+        </a>
       </div>
 
       <div class="ddp">
-        <div class="ddp-box">
+        <a href="#" class="ddp-box">
           <div>
             <img src="@/images/ddp.svg" alt="" />
             <div>
-              <span>Deep Document Profiler (2022)</span>
-              <em>DDP</em>
+              <h4>Deep Document Profiler (2022)</h4>
+              <h3>DDP</h3>
               <p>
                 다차원 메타데이터 추출 분석 기반<br />
                 비실행형 악성코드 프로파일링 및 탐지 기술
@@ -43,7 +43,7 @@
               <mainbtn />
             </div>
           </div>
-        </div>
+        </a>
       </div>
     </div>
   </section>

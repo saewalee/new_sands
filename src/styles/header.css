@@ -1,5 +1,6 @@
 header {
   @apply flex w-full h-header fixed;
+  z-index: 999;
 
   > .con {
     @apply flex w-full justify-between items-center px-[40px] h-header;
@@ -12,10 +13,10 @@ header {
         @apply flex items-center h-full;
 
         > li {
-          @apply flex justify-center font-g text-nav-gray w-li text-center relative;
+          @apply flex justify-center font-g text-light-gray05 w-li text-center relative;
           &:hover {
             > a {
-              @apply text-sand-blue;
+              @apply text-blue01;
             }
           }
 
@@ -27,9 +28,9 @@ header {
             @apply p-p24 transition-opacity duration-700 w-full opacity-0 invisible absolute h-h140 top-full;
 
             > li {
-              @apply w-li text-center text-nav2-gray font-light mt-m10;
+              @apply w-li text-center text-light-gray06 font-light mt-m10;
               &:hover {
-                @apply text-sand-blue;
+                @apply text-blue01;
               }
             }
           }
@@ -48,7 +49,7 @@ header {
 }
 
 header.hover {
-  @apply h-headeropen bg-header-hover transition-height duration-500;
+  @apply h-headeropen bg-headerBg transition-height duration-500;
 
   > .con {
     @apply bg-con-hover;
