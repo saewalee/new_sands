@@ -21,7 +21,7 @@
       @apply bg-issue-card border-blue01;
     }
 
-    &:hover > a > div:last-of-type > .mainbtn button > div:first-of-type {
+    &:hover > a > div:last-of-type > .button2 > div:first-of-type {
       @apply bg-white mt-m5 ml-m5;
 
       > div {

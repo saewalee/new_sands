@@ -55,6 +55,10 @@
             @apply flex flex-col;
             > h4 {
               @apply text-t18 font-light mb-m7;
+              > span {
+                @apply bg-g-blue3 rounded-br4 ml-m10 font-e text-t15;
+                padding: 3px 10px;
+              }
             }
             > h3 {
               @apply text-t36 not-italic bg-g-txt-blue bg-clip-text mb-m20;
@@ -86,7 +90,7 @@
       > .dbp-box:hover {
         > div {
           > div {
-            > .mainbtn button > div:first-of-type {
+            > .button2 > div:first-of-type {
               @apply bg-white mt-m5 ml-m5;
 
               > div {
@@ -131,7 +135,12 @@
 
             > h4 {
               @apply text-t18 font-light mb-m7;
+              > span {
+                @apply bg-g-blue3 rounded-br4 ml-m10 font-e text-t15;
+                padding: 3px 10px;
+              }
             }
+
             > h3 {
               @apply text-t36 not-italic bg-g-txt-blue bg-clip-text mb-m20;
               -webkit-background-clip: text;
@@ -148,7 +157,7 @@
       > .ddp-box:hover {
         > div {
           > div {
-            > .mainbtn button > div:first-of-type {
+            > .button2 > div:first-of-type {
               @apply bg-white mt-m5 ml-m5;
 
               > div {

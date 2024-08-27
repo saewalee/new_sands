@@ -7,8 +7,14 @@
 @import "home/technology.css";
 @import "home/issue.css";
 @import "home/inquiry.css";
+@import "service/ctx.css";
+@import "service/platformyoutube.css";
+@import "service/graph.css";
+@import "service/features.css";
+@import "company/history.css";
 @import "font.css";
 @import "button/mainbtn.css";
+@import "modal/inquirypopup.css";
 
 body {
   background-color: #050a1a;
@@ -24,7 +30,45 @@ body {
 @layer base {
   .sands-con {
     @apply w-con h-full mx-auto flex flex-col;
-    /* border: 1px solid red; */
+  }
+
+  .sands-title {
+    @apply flex flex-col justify-center items-center h-full;
+    > h2 {
+      @apply font-g text-t24 font-light;
+    }
+    > h3 {
+      @apply font-e text-t50;
+    }
+  }
+
+  .banner-title {
+    @apply h-h760;
+    background-size: cover;
+    > div {
+      @apply flex flex-col h-full;
+      > .sands-title {
+        @apply flex flex-col justify-center items-center flex-1;
+        > h2 {
+          @apply font-g text-t24 font-light;
+        }
+        > h3 {
+          @apply font-e text-t50;
+        }
+      }
+
+      > .belt {
+        @apply flex justify-center items-center bg-belt w-full h-h60;
+
+        > li {
+          @apply w-w180 flex justify-center h-full;
+
+          > a {
+            @apply flex justify-center items-center h-full w-full font-g text-t18;
+          }
+        }
+      }
+    }
   }
 }
 
@@ -37,18 +81,25 @@ body {
     -webkit-text-fill-color: transparent;
   }
 
-  /* .title  {
-    @apply flex text-t18 gap-g10 mb-m20 font-light bg-g-txt-blue bg-clip-text;
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-  } */
-
   .title > span {
     @apply text-t46 text-center mb-m40;
   }
 
   .btn {
     @apply hover:bg-white;
+  }
+
+  .title2 {
+    @apply flex flex-col items-center gap-g40;
+    > h2 {
+      @apply text-t42 text-center;
+    }
+    > span {
+      @apply font-g text-t20 font-light;
+      > em {
+        @apply not-italic text-blue01;
+      }
+    }
   }
 
   /* &:hover .mainbtn button > div:first-of-type {

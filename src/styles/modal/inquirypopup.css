@@ -1,0 +1,109 @@
+.inquiry-popup {
+  @apply h-h740 w-w730 bg-white absolute rounded-br8 p-p30 text-black;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 99;
+  > .popup-title {
+    @apply flex justify-between items-center pb-p30 border-b border-light-gray06;
+    > h2 {
+      @apply text-black text-t28 font-g;
+    }
+  }
+  > .popup-main {
+    @apply flex pb-p40 pt-p40 gap-40;
+    > form {
+      @apply h-full w-full;
+      > fieldset {
+        @apply flex flex-col gap-g40;
+        div {
+          @apply flex font-g text-t18 text-dark-gray04 gap-g40 items-center;
+          > label {
+            > h2 {
+              width: 80px;
+            }
+          }
+          > input {
+            @apply h-h45 border rounded-br8 border-light-gray03 bg-light-gray02 text-t15 text-light-gray06 font-g;
+            flex: 1;
+            padding: 10px 20px;
+          }
+
+          > input:focus {
+            @apply border border-blue01 bg-light-gray02 text-dark-gray04 outline-none;
+          }
+        }
+        > .email-box {
+          position: relative;
+          > label {
+            &::before {
+              @apply font-g absolute text-dark-gray04 text-t15;
+              content: "@";
+              top: 50%;
+              left: 62%;
+              transform: translate(-50%, -50%);
+            }
+          }
+          > input {
+          }
+          > select {
+            flex: 1;
+            @apply h-h45 border rounded-br8 border-light-gray03 bg-light-gray02 text-t15 text-light-gray06 font-g;
+            &:focus {
+              @apply border border-blue01 bg-light-gray02 text-dark-gray04 outline-none;
+            }
+          }
+        }
+
+        > .purpose-box {
+          > select {
+            padding: 10px 20px;
+            flex: 1;
+            @apply h-h45 border rounded-br8 border-light-gray03 bg-light-gray02 text-t15 text-light-gray06 font-g;
+            &:focus {
+              @apply border border-blue01 bg-light-gray02 text-dark-gray04 outline-none;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  > .popup-bottom {
+    @apply flex flex-col gap-g20 pt-p40 border-t border-light-gray06;
+    > div {
+      @apply flex gap-g10 items-center;
+      > span {
+        @apply font-g text-t18;
+        > em {
+          @apply not-italic underline;
+          text-underline-position: under;
+        }
+      }
+      > form {
+        > fieldset {
+          > input {
+            width: 22px;
+            height: 22px;
+            &:checked {
+              @apply bg-blue01;
+              &::after {
+                display: none;
+              }
+            }
+          }
+        }
+      }
+    }
+
+    > form {
+      width: 100%;
+      > fieldset {
+        button {
+          @apply flex justify-center items-center bg-light-gray05 p-p10 rounded-br8 font-g text-t24 text-white;
+          width: 100%;
+        }
+      }
+    }
+  }
+}

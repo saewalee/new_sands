@@ -69,7 +69,7 @@
             }
 
             > div:last-of-type {
-              .mainbtn button > div:first-of-type {
+              .button2 > div:first-of-type {
                 @apply bg-white mt-m5 ml-m5;
 
                 > div {
@@ -197,7 +197,7 @@
             }
 
             > div:last-of-type {
-              .mainbtn button > div:first-of-type {
+              .button2 > div:first-of-type {
                 @apply bg-white mt-m5 ml-m5;
 
                 > div {

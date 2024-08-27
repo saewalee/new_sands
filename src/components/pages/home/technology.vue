@@ -20,7 +20,7 @@
           <div>
             <img src="@/images/dbp.svg" alt="" />
             <div>
-              <h4>Deep Binary Profiler (2021)</h4>
+              <h4>Deep Binary Profiler (2021)<span>NET</span></h4>
               <h3>DBP</h3>
               <p>바이너리 역공학 기반 공격자 프로파일링 기술</p>
               <mainbtn />
@@ -34,7 +34,7 @@
           <div>
             <img src="@/images/ddp.svg" alt="" />
             <div>
-              <h4>Deep Document Profiler (2022)</h4>
+              <h4>Deep Document Profiler (2022)<span>NET</span></h4>
               <h3>DDP</h3>
               <p>
                 다차원 메타데이터 추출 분석 기반<br />

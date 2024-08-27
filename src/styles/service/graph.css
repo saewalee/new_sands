@@ -1,0 +1,62 @@
+.graph {
+  @apply pt-p100 pb-p100;
+
+  > .sands-con {
+    @apply gap-g60;
+    > .graph-box {
+      padding: 0 40px;
+      position: relative;
+      > ul:first-of-type {
+        @apply flex justify-between pt-p10;
+      }
+
+      > .info {
+        @apply absolute flex flex-wrap gap-g20;
+        top: 0;
+        width: 558px;
+        left: 15%;
+
+        > li {
+          @apply relative flex flex-col font-g text-t16 font-light;
+          height: 85px;
+          flex: 1 1 calc(50% - 10px);
+          &::before {
+            content: "";
+            @apply absolute;
+            top: 10%;
+            left: -10%;
+            background: linear-gradient(
+              180deg,
+              rgba(255, 255, 255, 1) 0%,
+              rgba(255, 255, 255, 0.1) 100%
+            );
+            height: 100%;
+            width: 2px;
+          }
+          > span {
+            @apply flex items-end h-full items-start gap-g10;
+            > em {
+              @apply text-blue01 text-t60 not-italic font-bold;
+            }
+          }
+        }
+
+        > li:nth-of-type(2) {
+          > span {
+            > em {
+              @apply text-red01;
+            }
+          }
+        }
+
+        > li:nth-of-type(3) {
+          > span {
+            > em {
+              @apply text-light-blue03;
+            }
+          }
+        }
+      }
+    }
+  }
+}

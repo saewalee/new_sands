@@ -14,6 +14,20 @@
         </fieldset>
       </form>
     </div>
+
+    <Inquirypopup />
   </section>
   <!-- <router-view /> -->
 </template>
+
+<script>
+import Inquirypopup from "@/components/common/inquirypopup.vue";
+
+export default {
+  name: "Inquiry",
+
+  components: {
+    Inquirypopup,
+  },
+};
+</script>

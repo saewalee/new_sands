@@ -1,5 +1,5 @@
 <template>
-  <form action="button" class="mainbtn">
+  <!-- <form action="button" class="mainbtn">
     <fieldset>
       <legend>버튼</legend>
       <button type="button">
@@ -9,15 +9,12 @@
         <div></div>
       </button>
     </fieldset>
-  </form>
+  </form> -->
 
-  <!-- <div class="mainbtn">
-    <a href="#">
-      <div>
-        <div></div>
-      </div>
+  <button type="button" class="button2">
+    <div>
       <div></div>
-    </a>
-  </div> -->
-  <!-- <router-view /> -->
+    </div>
+    <div></div>
+  </button>
 </template>

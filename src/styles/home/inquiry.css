@@ -1,5 +1,5 @@
 .inquiry {
-  @apply h-screen;
+  @apply h-screen relative;
   background: url("../../images/iqubg.png") 50% 50% / cover;
   > .sands-con {
     @apply relative flex flex-col justify-center items-center gap-7;

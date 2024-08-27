@@ -1,0 +1,14 @@
+.Platformyoutube {
+  @apply pt-p100 pb-p100;
+  /* height: 100vh; */
+  > .sands-con {
+    @apply gap-g80;
+    > .youtube-box {
+      @apply rounded-br10 w-full overflow-hidden h-h740;
+      /* background: url(@/images/youtubuimg.png); */
+      > img {
+        @apply block h-full w-full object-cover;
+      }
+    }
+  }
+}

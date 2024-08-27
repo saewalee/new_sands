@@ -9,10 +9,10 @@
       <nav class="menu-item">
         <ul>
           <li @mouseover="addHoverClass" @mouseleave="removeHoverClass">
-            <a href="">샌즈랩</a>
+            <a href="/company">샌즈랩</a>
             <ul class="dept2">
               <li>
-                <a href="">회사소개</a>
+                <a href="/company">회사소개</a>
               </li>
               <li><a href="">연혁</a></li>
               <li><a href="">CI</a></li>
@@ -22,8 +22,8 @@
           <li @mouseover="addHoverClass" @mouseleave="removeHoverClass">
             <a href="/service"> 서비스 </a>
             <ul class="dept2">
-              <li><a href="">CTX</a></li>
-              <li><a href="">CTX For GPT</a></li>
+              <li><a href="/service">CTX</a></li>
+              <li><a href="/service">CTX For GPT</a></li>
             </ul>
           </li>
 
