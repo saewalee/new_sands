@@ -1,5 +1,8 @@
 .issue {
   @apply h-screen;
+  > .sands-con {
+    justify-content: center;
+  }
 }
 .title {
   > div {

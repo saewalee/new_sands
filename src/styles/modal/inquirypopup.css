@@ -40,7 +40,7 @@
               @apply font-g absolute text-dark-gray04 text-t15;
               content: "@";
               top: 50%;
-              left: 62%;
+              left: 59%;
               transform: translate(-50%, -50%);
             }
           }
@@ -49,6 +49,7 @@
           > select {
             flex: 1;
             @apply h-h45 border rounded-br8 border-light-gray03 bg-light-gray02 text-t15 text-light-gray06 font-g;
+            padding: 10px 20px;
             &:focus {
               @apply border border-blue01 bg-light-gray02 text-dark-gray04 outline-none;
             }
@@ -80,30 +81,21 @@
           text-underline-position: under;
         }
       }
-      > form {
-        > fieldset {
-          > input {
-            width: 22px;
-            height: 22px;
-            &:checked {
-              @apply bg-blue01;
-              &::after {
-                display: none;
-              }
-            }
+      > input {
+        width: 22px;
+        height: 22px;
+        &:checked {
+          @apply bg-blue01;
+          &::after {
+            display: none;
           }
         }
       }
     }
 
-    > form {
+    button {
+      @apply flex justify-center items-center bg-light-gray05 p-p10 rounded-br8 font-g text-t24 text-white;
       width: 100%;
-      > fieldset {
-        button {
-          @apply flex justify-center items-center bg-light-gray05 p-p10 rounded-br8 font-g text-t24 text-white;
-          width: 100%;
-        }
-      }
     }
   }
 }

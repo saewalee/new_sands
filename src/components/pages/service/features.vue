@@ -2,7 +2,7 @@
   <section class="features">
     <div class="sands-con">
       <div class="title2">
-        <span>Features</span>
+        <h3>Features</h3>
         <h2>CTX 기능</h2>
       </div>
 

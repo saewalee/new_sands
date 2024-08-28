@@ -1,15 +1,10 @@
 <template>
-  <div class="inquiry-popup">
+  <div class="inquiry-popup" v-if="isVisible">
     <div class="popup-title">
       <h2>상담신청</h2>
-      <form action="button">
-        <fieldset>
-          <legend></legend>
-          <button>
-            <img src="@/images/closebtn.svg" alt="상담신청 종료버튼" />
-          </button>
-        </fieldset>
-      </form>
+      <button class="close-btn" @click="close">
+        <img src="@/images/closebtn.svg" alt="상담신청 종료버튼" />
+      </button>
     </div>
     <div class="popup-main">
       <form action="">
@@ -39,11 +34,8 @@
               placeholder="이메일을 입력해주세요."
               required
             />
-            <select
-              id="email-select"
-              name="email-select"
-              placeholder="이메일 선택"
-            >
+            <select id="email-select" name="email-select">
+              <option value="" disabled selected>이메일 선택</option>
               <option value="naver">naver.com</option>
               <option value="google">google.com</option>
               <option value="hanmail">hanmail.net</option>
@@ -75,11 +67,8 @@
 
           <div class="purpose-box form-box">
             <label for="purpose-select"><h2>상담 목적</h2></label>
-            <select
-              id="purpose-select"
-              name="purpose-select"
-              placeholder="상담 목적 선택"
-            >
+            <select id="purpose-select" name="purpose-select">
+              <option value="" disabled selected>상담 목적 선택</option>
               <option value="가격문의">가격 문의</option>
               <option value="인터뷰요청">인터뷰 요청</option>
               <option value="계약문의">계약 문의</option>
@@ -95,20 +84,38 @@
           에 동의합니다.
         </span>
 
-        <form action="checkbox">
-          <fieldset>
-            <legend></legend>
-            <input type="checkbox" />
-          </fieldset>
-        </form>
+        <input type="checkbox" />
       </div>
 
-      <form action="button">
-        <fieldset>
-          <legend></legend>
-          <button>상담신청</button>
-        </fieldset>
-      </form>
+      <button>상담신청</button>
     </div>
   </div>
 </template>
+
+<script>
+export default {
+  props: {
+    isVisible: {
+      type: Boolean,
+      required: true,
+    },
+  },
+  data() {
+    return {
+      form: {
+        name: "",
+        email: "",
+        phone: "",
+        company: "",
+
+        // 더 많은 필드들...
+      },
+    };
+  },
+  methods: {
+    close() {
+      this.$emit("close"); // 부모 컴포넌트에 모달 닫기 이벤트를 전달합니다.
+    },
+  },
+};
+</script>

@@ -11,15 +11,15 @@
       }
 
       > .info {
-        @apply absolute flex flex-wrap gap-g20;
+        @apply absolute flex flex-wrap gap-g40;
         top: 0;
         width: 558px;
-        left: 15%;
+        left: 12%;
 
         > li {
           @apply relative flex flex-col font-g text-t16 font-light;
-          height: 85px;
-          flex: 1 1 calc(50% - 10px);
+          height: 72px;
+          flex: 1 1 calc(50% - 20px);
           &::before {
             content: "";
             @apply absolute;

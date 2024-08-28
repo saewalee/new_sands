@@ -1,0 +1,29 @@
+.company-banner {
+  background: url("@/images/historybg.png");
+  > div {
+    @apply flex flex-col h-full;
+
+    > .belt {
+      > li:first-of-type {
+        a {
+          @apply font-light;
+        }
+      }
+      > li:nth-of-type(2) {
+        @apply relative;
+        &::before {
+          @apply absolute w-full h-h3 bg-blue01;
+          content: "";
+          top: 0;
+          left: 0;
+        }
+      }
+
+      > li:last-of-type {
+        a {
+          @apply font-light;
+        }
+      }
+    }
+  }
+}

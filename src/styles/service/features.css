@@ -3,7 +3,7 @@
   > .sands-con {
     > .title2 {
       @apply gap-g24 pb-p60;
-      > span {
+      > h3 {
         @apply bg-g-txt-blue02 bg-clip-text text-t20 font-e;
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;
@@ -106,7 +106,7 @@
         }
 
         > h3 {
-          @apply font-e text-t100 font-light bg-g-blue4 bg-clip-text pl-p40 pb-p60 h-full;
+          @apply font-e text-t100 font-light bg-g-blue4 bg-clip-text pl-p80 pb-p60 h-full;
           -webkit-background-clip: text;
           -webkit-text-fill-color: transparent;
           flex: 1;
@@ -119,7 +119,7 @@
       > div:nth-of-type(2) {
         @apply absolute flex flex-col gap-g40;
         top: 55%;
-        left: 60%;
+        left: 63%;
         > h4 {
           @apply text-t32;
         }

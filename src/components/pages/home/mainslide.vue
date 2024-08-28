@@ -1,6 +1,6 @@
 <template>
   <section class="mainslide">
-    <swiper :options="swiperOptions">
+    <swiper :modules="modules" :options="swiperOptions">
       <swiper-slide class="slide1">
         <div class="sands-con">
           <div class="mainslide__text">
@@ -51,6 +51,7 @@
 <script>
 import { Swiper, SwiperSlide } from "swiper/vue";
 import "swiper/swiper-bundle.min.css";
+// import "swiper/swiper.css";
 import { Autoplay, Pagination, Navigation } from "swiper";
 
 export default {
@@ -60,10 +61,10 @@ export default {
   },
   data() {
     return {
+      modules: [Autoplay],
       swiperOptions: {
-        modules: [Autoplay, Pagination, Navigation],
         slidesPerView: 1,
-        spaceBetween: 10,
+        spaceBetween: 0,
         loop: true,
         autoplay: {
           delay: 3000,

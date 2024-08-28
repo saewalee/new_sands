@@ -12,13 +12,9 @@
       }
     }
 
-    > form {
-      > fieldset {
-        > button {
-          @apply bg-g-txt-blue text-black w-w289 rounded-br10;
-          padding: 10px 40px;
-        }
-      }
+    > button {
+      @apply bg-g-txt-blue text-black w-w289 rounded-br10;
+      padding: 10px 40px;
     }
   }
 }

@@ -6,6 +6,7 @@
 
     .title {
       @apply absolute;
+      top: 5%;
 
       > div {
         @apply w-full;

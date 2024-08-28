@@ -7,15 +7,12 @@
           편하게 문의 주세요
         </span>
       </div>
-      <form action="button">
-        <fieldset>
-          <legend></legend>
-          <button type="button" aria-label="문의 버튼">문의하기</button>
-        </fieldset>
-      </form>
+      <button @click="openModal" type="button" aria-label="문의 버튼">
+        문의하기
+      </button>
     </div>
 
-    <Inquirypopup />
+    <Inquirypopup :isVisible="isModalVisible" @close="closeModal" />
   </section>
   <!-- <router-view /> -->
 </template>
@@ -28,6 +25,19 @@ export default {
 
   components: {
     Inquirypopup,
+  },
+  data() {
+    return {
+      isModalVisible: false,
+    };
+  },
+  methods: {
+    openModal() {
+      this.isModalVisible = true; // 모달을 열 때
+    },
+    closeModal() {
+      this.isModalVisible = false; // 모달을 닫을 때
+    },
   },
 };
 </script>

@@ -1,9 +1,12 @@
 .sand {
   @apply h-screen;
+  > .sands-con {
+    justify-content: center;
+  }
 }
 
 .title {
-  @apply flex justify-center flex-col items-center pt-p130;
+  @apply pt-p70 flex justify-center flex-col items-center;
   > ul {
     > li:not(:last-of-type) {
       &::after {

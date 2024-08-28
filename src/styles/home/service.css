@@ -1,3 +1,17 @@
+.ctx {
+  background: url("@/images/ctxservicebg.png");
+}
+
+.mnx {
+  background: url("@/images/historybg.png");
+  background-size: cover;
+}
+
+.mdx {
+  background: url("@/images/mainslide2.png");
+  background-size: cover;
+}
+
 .service {
   /* @apply h-screen; */
   height: 180vh;

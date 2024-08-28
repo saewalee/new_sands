@@ -1,0 +1,12 @@
+.cases {
+  > .sands-con {
+    > .title2 {
+      @apply gap-g24 pb-p60;
+      > h3 {
+        @apply bg-g-txt-blue02 bg-clip-text text-t20 font-e;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+      }
+    }
+  }
+}

@@ -1,5 +1,6 @@
 @import "header.css";
 @import "footer.css";
+
 @import "home/main.css";
 @import "home/mainslide.css";
 @import "home/sand.css";
@@ -7,14 +8,24 @@
 @import "home/technology.css";
 @import "home/issue.css";
 @import "home/inquiry.css";
+
 @import "service/ctx.css";
 @import "service/platformyoutube.css";
 @import "service/graph.css";
 @import "service/features.css";
+@import "service/comparison.css";
+@import "service/cases.css";
+
+@import "notice/noticebn.css";
+
+@import "company/companybn.css";
 @import "company/history.css";
 @import "font.css";
 @import "button/mainbtn.css";
 @import "modal/inquirypopup.css";
+
+@import "mini.css";
+/* @import "minifooter.css"; */
 
 body {
   background-color: #050a1a;
@@ -30,6 +41,7 @@ body {
 @layer base {
   .sands-con {
     @apply w-con h-full mx-auto flex flex-col;
+    /* border: 1px solid red; */
   }
 
   .sands-title {
@@ -89,6 +101,7 @@ body {
     @apply hover:bg-white;
   }
 
+  /*  */
   .title2 {
     @apply flex flex-col items-center gap-g40;
     > h2 {

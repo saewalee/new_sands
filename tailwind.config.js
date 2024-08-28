@@ -11,7 +11,8 @@ export default {
         light: "#F0FEFF",
 
         // white
-        "white-0.4": "rgba(255, 255, 255, 0.4);",
+        "white-0.2": "rgba(255, 255, 255, 0.2)",
+        "white-0.4": "rgba(255, 255, 255, 0.4)",
         "white-0.8": "rgba(255, 255, 255, 0.80)",
 
         // gray
@@ -34,6 +35,7 @@ export default {
 
         // blue
         blue01: "#3990F9",
+        blue02: "#49F",
 
         "light-blue01": "#17F9F9",
         "light-blue02": "#4FDFFF",
@@ -45,6 +47,10 @@ export default {
         "con-hover": "#050a1a",
         "issue-card": "rgba(57, 144, 249, 0.1)",
         belt: "#0F2547",
+
+        "bg-light-gray": "rgba(255, 255, 255, 0.20)",
+        red02: "rgba(255, 12, 12, 0.40)",
+        red03: "rgba(255, 12, 12, 0.10)",
       },
 
       backgroundImage: {
@@ -92,6 +98,7 @@ export default {
         p30: "30px",
         p40: "40px",
         p60: "60px",
+        p70: "70px",
         p80: "80px",
         p100: "100px",
         p130: "130px",
@@ -142,6 +149,7 @@ export default {
         h2: "2px",
         h3: "3px",
         h8: "8px",
+        h13: "13px",
         h35: "35px",
         h45: "45px",
         h50: "50px",
@@ -161,8 +169,10 @@ export default {
         con: "1380px",
         li: "140px",
         w1: "1px",
+        w2: "2px",
         w8: "8px",
         w12: "12px",
+        w13: "13px",
         w35: "35px",
         w45: "45px",
         w98: "98px",

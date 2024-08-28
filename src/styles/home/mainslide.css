@@ -32,13 +32,18 @@
       }
 
       > .slide2 {
+        @apply bg-cover;
         background: url("../../images/mainslide2.png") no-repeat;
         background-size: cover;
       }
 
       > .slide3 {
+        @apply bg-cover;
         background: url("../../images/mainslide3.png") no-repeat;
         background-size: cover;
+      }
+
+      > .swiper-slide-active {
       }
     }
   }

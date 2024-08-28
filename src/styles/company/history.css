@@ -1,28 +1,96 @@
 .history {
-  background: url("@/images/historybg.png");
-  > div {
-    @apply flex flex-col h-full;
-
-    > .belt {
-      > li:first-of-type {
-        a {
-          @apply font-light;
-        }
+  /* height: 100vh; */
+  > .sands-con {
+    > .title2 {
+      @apply gap-g24 pb-p100 pt-p100;
+      > h3 {
+        @apply bg-g-txt-blue02 bg-clip-text text-t20 font-e;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
       }
-      > li:nth-of-type(2) {
+    }
+
+    > .history-main {
+      @apply flex flex-col justify-center;
+
+      > div {
         @apply relative;
-        &::before {
-          @apply absolute w-full h-h3 bg-blue01;
+        &::after {
+          @apply absolute h-full w-w2;
           content: "";
           top: 0;
-          left: 0;
+          left: 50%;
+          background: linear-gradient(
+            to bottom,
+            rgba(57, 144, 249, 0.1),
+            #3990f9 25%,
+            #5affe9 75%,
+            rgba(90, 255, 233, 0.1)
+          );
+        }
+
+        > div {
+          @apply relative;
+          > ul {
+            @apply relative flex items-center w-full gap-g60 font-g mt-m20;
+            &::after {
+              @apply absolute border-2 border-blue01 h-h13 w-w13;
+              content: "";
+              top: 50%;
+              left: 50%;
+              transform: translate(-42%, -50%);
+              border-radius: 50%;
+              background-color: black;
+              z-index: 1;
+            }
+
+            > li {
+              flex: 1;
+            }
+            > li:first-child {
+              @apply text-end text-t24 text-white-0.8;
+            }
+            > li:last-child {
+              @apply text-t16 font-light relative text-white-0.8;
+            }
+            &:hover > li:first-child {
+              @apply text-blue01;
+            }
+
+            &:hover > li:last-child {
+              @apply text-white font-normal;
+            }
+
+            &:hover::after {
+              background-color: #3990f9;
+              box-shadow: 0px 0px 10px #3990f9;
+            }
+          }
+          > span {
+            @apply absolute text-blue01 text-t46 font-normal font-g;
+            top: 0;
+            left: 25%;
+          }
+        }
+
+        > .h2021,
+        .h2020,
+        .h2019,
+        .h2018,
+        .h2016,
+        .h2015,
+        .h2014,
+        .h2013 {
+          @apply mt-m100;
+        }
+        > .h2013,
+        .h2018 {
+          @apply mb-m60;
         }
       }
 
-      > li:last-of-type {
-        a {
-          @apply font-light;
-        }
+      > div:last-of-type {
+        @apply mt-m60;
       }
     }
   }

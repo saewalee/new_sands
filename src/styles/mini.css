@@ -1,0 +1,28 @@
+.mini {
+  height: 80vh;
+  background: url("@/images/lastbackground.png");
+  background-size: cover;
+  position: relative;
+
+  &::after {
+    content: "";
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.5);
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+  }
+  > div {
+    @apply flex flex-col gap-g40 justify-center items-center h-full w-full absolute;
+    z-index: 1;
+    > ul {
+      @apply flex gap-g10 text-t24 font-e font-light;
+      > li {
+        > em {
+          @apply not-italic text-blue02 font-e;
+        }
+      }
+    }
+  }
+}
