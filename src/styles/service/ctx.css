@@ -1,7 +1,3 @@
-.ctx {
-  background: url("@/images/ctxservicebg.png");
-}
-
 .service-ctx {
   background: url("@/images/ctxservicebg.png");
   > div {

@@ -23,7 +23,6 @@ export default {
 <!-- 메인 컴포넌트 -->
 <template>
   <mainslide2 />
-  <!-- <mainslide /> -->
   <sand />
   <service />
   <technology />

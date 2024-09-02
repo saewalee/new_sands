@@ -17,6 +17,7 @@
 @import "service/cases.css";
 
 @import "notice/noticebn.css";
+@import "notice/noticetable.css";
 
 @import "company/companybn.css";
 @import "company/history.css";
@@ -54,6 +55,17 @@ body {
     }
   }
 
+  .sands-con {
+    > .title2 {
+      @apply gap-g24 pb-p100 pt-p100;
+      > h3 {
+        @apply bg-g-txt-blue02 bg-clip-text text-t20 font-e;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+      }
+    }
+  }
+
   .banner-title {
     @apply h-h760;
     background-size: cover;
@@ -81,6 +93,10 @@ body {
         }
       }
     }
+  }
+
+  em {
+    @apply not-italic;
   }
 }
 

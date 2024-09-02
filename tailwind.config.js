@@ -9,10 +9,16 @@ export default {
         black: "#000000",
         white: "#ffffff",
         light: "#F0FEFF",
+        headerBg: "rgba(5, 10, 26, 0.8)",
+        "con-hover": "#050a1a",
+        "issue-card": "rgba(57, 144, 249, 0.1)",
+        belt: "#0F2547",
 
         // white
+        "white-0.1": "rgba(250, 250, 250, 0.1)",
         "white-0.2": "rgba(255, 255, 255, 0.2)",
         "white-0.4": "rgba(255, 255, 255, 0.4)",
+        "white-0.5": "rgba(255, 255, 255, 0.5)",
         "white-0.8": "rgba(255, 255, 255, 0.80)",
 
         // gray
@@ -28,6 +34,7 @@ export default {
         "dark-gray02": "#333",
         "dark-gray03": "#575757",
         "dark-gray04": "#505050",
+        "dakr-gray05": "#757575",
 
         // red
         red01: "#FF2125",
@@ -40,17 +47,14 @@ export default {
         "light-blue01": "#17F9F9",
         "light-blue02": "#4FDFFF",
         "light-blue03": "#00CAEA",
+        "light-blue04": "rgba(57, 144, 249, 0.50)",
+        "light-blue05": "rgba(57, 144, 249, 0.2)",
       },
 
       backgroundColor: {
-        headerBg: "rgba(5, 10, 26, 0.8)",
-        "con-hover": "#050a1a",
-        "issue-card": "rgba(57, 144, 249, 0.1)",
-        belt: "#0F2547",
-
         "bg-light-gray": "rgba(255, 255, 255, 0.20)",
-        red02: "rgba(255, 12, 12, 0.40)",
-        red03: "rgba(255, 12, 12, 0.10)",
+        "red-0.4": "rgba(255, 12, 12, 0.40)",
+        "red-0.3": "rgba(255, 12, 12, 0.10)",
       },
 
       backgroundImage: {
@@ -103,6 +107,7 @@ export default {
         p100: "100px",
         p130: "130px",
         p160: "160px",
+        p200: "200px",
       },
       margin: {
         m5: "5px",
@@ -173,6 +178,7 @@ export default {
         w8: "8px",
         w12: "12px",
         w13: "13px",
+        w24: "24px",
         w35: "35px",
         w45: "45px",
         w98: "98px",
