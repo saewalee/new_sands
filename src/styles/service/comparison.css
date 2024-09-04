@@ -25,7 +25,7 @@
               width: 25%;
             }
             > th:nth-of-type(2) {
-              @apply bg-red02 border border-red02;
+              @apply bg-red-0.4 border border-red02;
               > div {
                 @apply flex h-full w-full justify-center;
               }
@@ -60,7 +60,9 @@
               @apply font-light text-start;
             }
             > .comparison-table__ctx {
-              @apply bg-red-0.3 border-l border-r border-red-500;
+              @apply bg-red-0.3;
+              border-left: 1px solid #ff0c0c !important;
+              border-right: 1px solid #ff0c0c !important;
             }
           }
 

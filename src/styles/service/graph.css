@@ -6,8 +6,108 @@
     > .graph-box {
       padding: 0 40px;
       position: relative;
+
       > ul:first-of-type {
-        @apply flex justify-between pt-p10;
+        position: absolute;
+        display: flex;
+        gap: 35px;
+        bottom: 7%;
+        margin-left: 30px;
+        align-items: end;
+        > li {
+          height: 21px;
+          width: 20px;
+          border-radius: 10px 10px 0px 0px;
+          background: linear-gradient(
+            180deg,
+            rgba(0, 217, 211, 0.2) 0%,
+            rgba(0, 217, 211, 0.04) 100%
+          );
+        }
+
+        > li:nth-child(2) {
+          height: 26px;
+        }
+        > li:nth-child(3) {
+          height: 33px;
+        }
+        > li:nth-child(4) {
+          height: 35px;
+        }
+        > li:nth-child(5) {
+          height: 47px;
+        }
+        > li:nth-child(6) {
+          height: 54px;
+        }
+        > li:nth-child(7) {
+          height: 62px;
+        }
+
+        > li:nth-child(8) {
+          height: 73px;
+        }
+
+        > li:nth-child(9) {
+          height: 103px;
+        }
+        > li:nth-child(10) {
+          height: 113px;
+        }
+        > li:nth-child(11) {
+          height: 141px;
+        }
+        > li:nth-child(12) {
+          height: 178px;
+        }
+
+        > li:nth-child(13) {
+          height: 199px;
+        }
+
+        > li:nth-child(14) {
+          height: 225px;
+        }
+
+        > li:nth-child(15) {
+          height: 244px;
+        }
+        > li:nth-child(16) {
+          height: 266px;
+        }
+
+        > li:nth-child(17) {
+          height: 296px;
+        }
+        > li:nth-child(18) {
+          height: 328px;
+        }
+
+        > li:nth-child(19) {
+          height: 360px;
+        }
+
+        > li:nth-child(20) {
+          height: 389px;
+        }
+        > li:last-of-type {
+          height: 407px;
+          background: linear-gradient(
+            180deg,
+            #00caea 0%,
+            rgba(0, 202, 234, 0.1) 100%
+          );
+        }
+      }
+
+      > .graph-arrow {
+        position: absolute;
+        top: -13%;
+        left: 8%;
+      }
+
+      > ul:nth-of-type(2) {
+        @apply flex justify-between pt-p10 pr-p130;
       }
 
       > .info {

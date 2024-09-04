@@ -41,9 +41,19 @@
           @apply text-t32;
         }
         > ul {
-          @apply flex gap-g10;
+          @apply flex gap-g20;
           > li {
-            @apply font-g text-t20 font-light;
+            @apply relative font-g text-t20 font-light;
+            &:not(:first-of-type)::after {
+              position: absolute;
+              content: "";
+              height: 4px;
+              width: 4px;
+              border-radius: 50%;
+              background-color: white;
+              top: 40%;
+              left: -10px;
+            }
           }
         }
       }

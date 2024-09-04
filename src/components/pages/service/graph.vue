@@ -10,6 +10,32 @@
       </div>
       <div class="graph-box">
         <img src="@/images/asd.png" alt="" />
+
+        <img class="graph-arrow" src="@/images/grapharrow.png" alt="" />
+        <ul>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+        </ul>
+
         <ul>
           <li>2020</li>
           <li>2021</li>
