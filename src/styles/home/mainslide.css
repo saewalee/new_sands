@@ -16,10 +16,12 @@
 
             > h2 {
               @apply text-t50 font-medium;
+              animation: fadeup 1s ease;
             }
 
             > p {
               @apply text-t20 font-light to-light-gray02 font-g font-light;
+              animation: fadeup 2.3s ease;
             }
           }
         }
@@ -29,6 +31,7 @@
         @apply bg-cover;
         background: url("../../images/mainslide1.png") no-repeat;
         background-size: cover;
+        animation: scale 3s ease;
       }
 
       > .slide2 {

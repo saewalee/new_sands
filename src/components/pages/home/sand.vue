@@ -17,23 +17,23 @@
         </p>
       </div>
       <ul class="card">
-        <li>
+        <li class="security">
           <!-- style="height: 160px" // 될 수 있으면 속성을 사용한다 -->
           <img src="@/images/sand_security.svg" alt="" height="160" />
           <h3>사이버보안</h3>
           <p><em>S</em>ecurity</p>
         </li>
-        <li>
+        <li class="ai">
           <img src="@/images/sand_ai.svg" alt="" height="160" />
           <h3>인공지능</h3>
           <p><em>A</em>i</p>
         </li>
-        <li>
+        <li class="network">
           <img src="@/images/sand_network.svg" alt="" height="160" />
           <h3>네트워크</h3>
           <p><em>N</em>etwork</p>
         </li>
-        <li>
+        <li class="data">
           <img src="@/images/sand_data.svg" alt="" height="160" />
           <h3>데이터</h3>
           <p><em>D</em>ata</p>

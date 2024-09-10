@@ -14,7 +14,11 @@
 
 .service {
   /* @apply h-screen; */
-  height: 180vh;
+  height: 110vh;
+
+  @media screen and (max-width: 1920px) {
+    height: 180vh;
+  }
 
   > .sands-con {
     > .service-box {

@@ -31,6 +31,7 @@
       display: grid;
       height: 320px;
       grid-template-columns: repeat(12, 1fr);
+
       /* border: 1px solid pink; */
       /* justify-content: nd; */
 
@@ -174,6 +175,18 @@
           }
         }
       }
+    }
+  }
+}
+
+.active {
+  .technology {
+    .dbp {
+      animation: left 1.4s ease;
+    }
+
+    .ddp {
+      animation: right 1.2s ease;
     }
   }
 }

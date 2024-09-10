@@ -147,3 +147,58 @@ body {
 }
 
 /* utilties */
+
+@keyframes left {
+  from {
+    opacity: 0;
+    transform: translate(700px, 0px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translate(0px, 0px);
+  }
+}
+
+@keyframes right {
+  from {
+    opacity: 0;
+    transform: translate(-700px, 0px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translate(0px, 0px);
+  }
+}
+
+@keyframes fadeup {
+  from {
+    opacity: 0;
+    transform: translatey(50px);
+  }
+  to {
+    opacity: 1;
+    transform: translatey(0px);
+  }
+}
+
+@keyframes fadeup2 {
+  from {
+    opacity: 0;
+    transform: translatey(200px);
+  }
+  to {
+    opacity: 1;
+    transform: translatey(0px);
+  }
+}
+
+@keyframes scale {
+  from {
+    transform: scale(1.1);
+  }
+  to {
+    transform: scale(1);
+  }
+}

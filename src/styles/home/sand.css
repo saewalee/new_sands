@@ -1,5 +1,6 @@
 .sand {
   @apply h-screen;
+
   > .sands-con {
     justify-content: center;
   }
@@ -51,6 +52,32 @@
       > em {
         @apply text-blue01 not-italic;
       }
+    }
+  }
+}
+
+.active {
+  .sand {
+    .title {
+      > span {
+        animation: fadeup 1s ease;
+      }
+      > p {
+        animation: fadeup 1.5s ease;
+      }
+    }
+
+    .security {
+      animation: fadeup2 1s ease;
+    }
+    .ai {
+      animation: fadeup2 1.5s ease;
+    }
+    .network {
+      animation: fadeup2 2s ease;
+    }
+    .data {
+      animation: fadeup2 2.5s ease;
     }
   }
 }
